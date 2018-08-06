@@ -19,11 +19,11 @@ class Owner
   def self.reset_all
     @@all = []
   end
-  
+
   def species
     @species = "human"
   end
-  
+
   def say_species
      "I am a #{self.species}."
   end
@@ -41,8 +41,15 @@ class Owner
   end
 
   def walk_dogs
-    pets[:dogs].each do |dog| 
-      dog.mood = "happy" 
+    pets[:dogs].each do |dog|
+      dog.mood = "happy"
+    end
+  end
+
+  def play_with_cats
+    pets[:cats].each do |cat|
+      cat.mood = "happy"
     end 
   end 
+  
 end
