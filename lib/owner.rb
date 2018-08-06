@@ -19,11 +19,11 @@ class Owner
   def self.reset_all
     @@all = []
   end
-  def species
+  def self.species
     @species = "human"
   end
   def say_species
-    puts "I am a #{@species}."
+    puts "I am a #{self.species}."
   end
 
 end
