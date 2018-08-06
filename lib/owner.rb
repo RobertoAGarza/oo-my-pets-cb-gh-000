@@ -19,7 +19,7 @@ class Owner
   def self.reset_all
     @@all = []
   end
-  def self.species 
+  def species
     @species = "human"
   end
 end
