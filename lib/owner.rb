@@ -64,6 +64,7 @@ class Owner
         animal.mood = "nervous"
       end
     end
+    pets = {fishes: [], cats: [], dogs: []}
   end
 
 end
