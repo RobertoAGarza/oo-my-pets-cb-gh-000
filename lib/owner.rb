@@ -65,7 +65,7 @@ class Owner
       end
       animals.clear
     end
-    pets = {fishes: [], cats: [], dogs: []}
+
   end
 
 end
