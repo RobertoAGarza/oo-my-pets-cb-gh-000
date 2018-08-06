@@ -1,3 +1,12 @@
 class Owner
-  # code goes here
+  @@all = [] 
+  attr_accessor :pets 
+  def initialize
+    
+  end 
+  
+  def self.all 
+    @@all 
+  end 
+  
 end
