@@ -19,9 +19,11 @@ class Owner
   def self.reset_all
     @@all = []
   end
+  
   def species
     @species = "human"
   end
+  
   def say_species
      "I am a #{self.species}."
   end
@@ -36,5 +38,11 @@ class Owner
 
   def buy_dog(dogName)
     pets[:dogs] << Dog.new(dogName)
+  end
+
+  def walk_dogs
+    pets[:dogs].each do |dog| 
+      dog.mood = "happy" 
+    end 
   end 
 end
