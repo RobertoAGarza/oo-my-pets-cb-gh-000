@@ -58,12 +58,12 @@ class Owner
     end
   end
 
-  def sell_pets 
-    pets.each do |type| 
+  def sell_pets
+    pets.each do |type|
       type.each do |animal|
         animal.moo = "nervous"
-      end 
-    end 
-  end 
-  
+      end
+    end
+  end
+
 end
